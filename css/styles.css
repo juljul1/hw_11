@@ -19,7 +19,9 @@
 	line-height: 14px;
 }
 .wrapper{
-	width: 90%;
+	width: 80%;
+	height:     auto;       /* These two lines were the key. */
+    min-height: 162%;
 	border: 1px solid #BEBEBE;
 }
 header{
@@ -115,12 +117,17 @@ nav .webcam{
 	float: left;	
 }
 .cheap{
-	margin-top: 40px;
+	margin-top: 39px;
 	float: left;
 	font-family: 'MyriadPro-It';
 	font-size: 36px;
 	color: #9e0000;
+	letter-spacing: 2px;
 }
+.cheap img{
+	width: 100%;
+}
+
 .black{
 	font-family: 'MyriadPro-It';
 	font-size: 14px;
@@ -130,7 +137,6 @@ nav .webcam{
 .wrap{
 	width: 99%;
 	clear: both;
-	/*border: 1px solid #BEBEBE;*/
 }
 aside{
 	width: 24%;
@@ -165,7 +171,6 @@ main{
 	width: 75%;
 	background-color: #1f1f1f;
 	float: right;
-	clear: both;
 }
 .name{
 	color: white;
@@ -219,278 +224,42 @@ main{
 	height: 100%;
 }
 footer{
-
-	width: 100%;
+	width: 79%;
 	height: 100px;
-	position: fixed;
-	bottom: 0;
-	margin-top: 100px;
-	background: #d9d8d8; /* Для старых браузров */
-    background: linear-gradient(to top, #fff, #bebebe);
+	position: absolute;
+	top: 850px;
+	background: #d9d8d8; 
+    background: linear-gradient(to top, #bebebe, #fff);
+    text-align: left;
+}
+footer img{
+	display: inline-block;
+	margin-top: 35px;
+	margin-left: 35px;
+}
+footer div:first-of-type {
+	border-right: 1px dashed white;
+	width: 30%;
+	height: 100px;
+	float: left;
+}
+.links{
+	text-align: center;
+	margin-bottom: 15px;
+	margin-top: 20px;
+}
+footer a{
+	text-decoration: none;
+	color: black;
+	font-size: 16px;
+	letter-spacing: 1.5px;
+}
+.links p{
+	margin: 20px;
 }
 /*
-.text1 {
-	font-family: tahoma;
-	font-size: 12px;
-	color: #FFFFFF;
-	font-weight: normal;
-}
-
-.text3 {
-	font-family: tahoma;
-	font-size: 11px;
-	font-weight: bold;
-	color: 333333;
-}
-.text4 {
-	font-family: tahoma;
-	font-size: 14px;
-	font-weight: bold;
-	color: de0303;
-}
-.text5 {
-	font-family: tahoma;
-	font-size: 10px;
-	font-weight: normal;
-	color: 67767a;
-}
-.text6 {
-	font-family: tahoma;
-	font-size: 10px;
-	font-weight: bold;
-	color: #FFFFFF;
-}
-.text7 {
-	font-family: tahoma;
-	font-size: 10px;
-	font-weight: normal;
-	color: #000000;
-}
-.text8 {
-
-	font-family: tahoma;
-	font-size: 10px;
-	font-weight: normal;
-	color: 94AEC5;
-}
-.text9 {
-
-
-	font-family: tahoma;
-	font-size: 10px;
-	font-weight: normal;
-	color: 4E4E4E;
-}
-
-a:link {
-	color: #000000;
-	font-family: tahoma;
-	font-size: 10px;
-	font-weight: normal;
-	text-decoration: none;
-
-}
-a:visited {
-	color: #000000;
-	font-family: tahoma;
-	font-size: 10px;
-	font-weight: normal;
-	font-style: normal;
-	text-decoration: none;
-
-}
-
-a:hover {
-	color: #000000;
-	font-family: tahoma;
-	font-size: 10px;
-	font-weight: normal;
-	font-style: normal;
-	line-height: normal;
-	font-variant: normal;
-	text-transform: none;
-	text-decoration: underline;
-}
-
-a.a:link {
-	font-family: tahoma;
-	font-size: 11px;
-	font-weight: normal;
-	color: 333333;
-	text-decoration: none;
-}
-a.a:visited {
-	font-family: tahoma;
-	font-size: 11px;
-	font-weight: normal;
-	color: 333333;
-	text-decoration: none;
-}
-a.a:hover {
-	font-family: tahoma;
-	font-size: 11px;
-	font-weight: normal;
-	color: #DE0303;
-	text-decoration: none;
-	line-height: 22px;
-}
-
-a.b:link {
-
-	font-family: tahoma;
-	font-size: 10px;
-	font-weight: bold;
-	color: 898989;
-	text-decoration: none;
-}
-a.b:visited {
-	font-family: tahoma;
-	font-size: 10px;
-	font-weight: bold;
-	color: 898989;
-	text-decoration: none;
-}
-a.b:hover {
-	font-family: tahoma;
-	font-size: 10px;
-	font-weight: bold;
-	color: #839B2E;
-	text-decoration: none;
-}
-
-a.c:link {
-	font-family: tahoma;
-	font-size: 10px;
-	font-weight: normal;
-	color: 71A2CB;
-	text-decoration: none;
-}
-a.c:visited {
-
-	font-family: tahoma;
-	font-size: 10px;
-	font-weight: normal;
-	color: 71A2CB;
-	text-decoration: none;
-}
-a.c:hover {
-
-	font-family: tahoma;
-	font-size: 10px;
-	font-weight: normal;
-	color: 71A2CB;
-	text-decoration: underline;
-}
-
-a.d:link {
-
-
-
-	font-family: tahoma;
-	font-size: 10px;
-	font-weight: normal;
-	color: #FFFFFF;
-	text-decoration: underline;
-}
-a.d:visited {
-
-
-	font-family: tahoma;
-	font-size: 10px;
-	font-weight: normal;
-	color: #FFFFFF;
-	text-decoration: underline;
-}
-a.d:hover {
-
-
-	font-family: tahoma;
-	font-size: 10px;
-	font-weight: bold;
-	color: #FFFFFF;
-	text-decoration: underline;
-}
-
-a.e:link {
-
-	font-family: tahoma;
-	font-size: 10px;
-	font-weight: bold;
-	color: 71A2CB;
-	text-decoration: underline;
-}
-a.e:visited {
-
-	font-family: tahoma;
-	font-size: 10px;
-	font-weight: bold;
-	color: 71A2CB;
-	text-decoration: underline;
-}
-a.e:hover {
-
-	font-family: tahoma;
-	font-size: 10px;
-	font-weight: bold;
-	color: #81992B;
-	text-decoration: none;
-}
-
-a.f:link {
-
-	font-family: tahoma;
-	font-size: 10px;
-	font-weight: normal;
-	color: 898989;
-	text-decoration: underline;
-}
-a.f:visited {
-
-	font-family: tahoma;
-	font-size: 10px;
-	font-weight: normal;
-	color: 898989;
-	text-decoration: underline;
-}
-a.f:hover {
-
-	font-family: tahoma;
-	font-size: 10px;
-	font-weight: normal;
-	color: #81992B;
-	text-decoration: none;
-}
-
-a.g:link {
-
-	font-family: tahoma;
-	font-size: 10px;
-	font-weight: bold;
-	color: #000000;
-	text-decoration: underline;
-}
-a.g:visited {
-
-	font-family: tahoma;
-	font-size: 10px;
-	font-weight: bold;
-	color: #000000;
-	text-decoration: underline;
-}
-a.g:hover {
-
-	font-family: tahoma;
-	font-size: 10px;
-	font-weight: bold;
-	color: #FF6600;
-	text-decoration: underline;
-}
-
-.inputstyle {
-	font-family: tahoma;
-	font-size: 10px;
-	font-weight: normal;
-	color: #5F726F;
-	background-color: #E2EDEB;
-	border: 1px solid #333333;
-}
+@media screen and (min-width: 100px) {
+    .cell{
+    	width: 27%;
+    }
+   }
