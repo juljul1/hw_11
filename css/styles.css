@@ -120,7 +120,7 @@ nav .webcam{
 	float: left;	
 }
 .cheap{
-	margin-top: 39px;
+	margin-top: 40px;
 	float: left;
 	font-family: 'MyriadPro-It';
 	font-size: 36px;
@@ -260,9 +260,109 @@ footer a{
 .links p{
 	margin: 20px;
 }
-/*
-@media screen and (min-width: 100px) {
-    .cell{
-    	width: 27%;
-    }
-   }
+
+@media screen and (max-width: 1200px) {
+ .cell{
+    	width: 44%;
+    	padding: 7px;
+    	height: 130px;
+    	margin: 5px;
+}
+ .cell div{
+	margin-bottom: 3px;
+}
+.cell p{
+	font-size: 12px;
+	padding: 25px;
+	width: 60%;
+}
+.goods{
+	float: left;
+	height: 80%;
+}
+.cell h3{
+	width: 100%;
+}
+.aside img{
+	width: 100%;
+}
+footer{
+	top: 770px;
+}
+footer img{
+	display: inline-block;
+	margin-top: 35px;
+	margin-left: 15px;
+}
+.cheap{
+	font-size: 32px;
+	letter-spacing: 1px;
+}  } 
+
+@media screen and (max-width: 920px) {
+	.cell{
+    	width: 38%;
+}
+.nav{
+	font-size: 12px;
+	}
+nav p{
+	font-size: 14px;
+}
+.cheap{
+	margin-top: 20px;
+	font-size: 28px;
+	letter-spacing: 1px;
+	width: 40%;
+	float: right;
+}
+.cheap img{
+	width: 100%;
+	margin-top: 20px;
+	margin-left: -2px;
+	height: 11%;
+}
+.webcamera{
+	width: 20%;
+}
+nav a{
+	width: 60%;
+	margin-left: 3px;
+	float: left;
+}
+.nav img{
+	float: left;
+	margin: 6px 6px 0px 3px;
+}
+nav .webcam{
+	float: right;
+	margin: 0px;
+}
+footer img{
+	display: inline-block;
+	margin-top: 35px;
+	margin-left: 4%;
+}
+}
+
+@media screen and (max-width: 886px) {
+.cheap img{
+	width: 100%;
+	margin-top: 7px;
+	height: 11%;
+}
+	}
+
+	@media screen and (max-width: 838px) {
+.cheap img{
+	width: 90%;
+	margin-right: -25px;
+}
+	}
+
+	@media screen and (max-width: 810px) {
+.cheap img{
+	width: 90%;
+	margin-right: -25px;
+}
+	}
