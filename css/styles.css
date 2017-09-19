@@ -1,6 +1,7 @@
 @font-face{
-	font-family: 'MyriadPro-It';
+	font-family: 'MyriadPro-It', 'MyriadPro Regular';
 	src: url(../fonts/MyriadPro-It.otf);
+	src: url(../fonts/MyriadPro Regular.otf);
 	font-size: normal;
 	font-style: normal;
 }
@@ -13,7 +14,7 @@
 .wrapper, textarea, input, select {
 	margin-bottom: 0px;
 	background-color: #FFFFFF;
-	font-family: Tahoma;
+	font-family: Tahoma, Helvetica, sans-serif;
 	font-size: 10px;
 	color: #000000;
 	line-height: 14px;
@@ -21,6 +22,7 @@
 .wrapper{
 	width: 80%;
 	border: 1px solid #BEBEBE;
+	overflow: hidden;
 }
 header{
 	width: 99%;
@@ -57,25 +59,28 @@ header p{
 	font-family: 'MyriadPro-It';
 	font-size: 28px;
 }
-span{
-	color: #8b8b8b;
-}
 .b_cart{
-	width: 40%;
+	width: 35%;
 }
 .b_cart img{
 	float: left;
 	margin-top: 6px;
 }
 .b_lang{
-	width: 30%;
+	width: 35%;
 }
-.b_currencies{
+.b_lang li{
+	display: inline;
+	margin: 3px;
+}
+header h5{
 	width: 25%;
+	display: block;
+	margin: 15px 0px 5px 100%;
 }
 select{
-	width: 70%;
-	float: right;
+	width: 120%;
+	margin-left: 90%;
 }
 .wrap:after{
   content: " ";
@@ -86,38 +91,53 @@ select{
 nav{
 	width: 30%;
 	border: 1px solid grey;
-	justify-content: center;
 	align-items: left;
 	text-align: left;
 	border: 0px;
 	float: left;
-}
-nav p{
 	font-family: 'MyriadPro-It';
 	font-size: 17px;
-	color: #535353;
-	margin: 7px;
 }
-nav p:hover{
- 	color: #8a0000;
+nav li:hover, aside li:hover{
+ 	background-color: #e1e0e0;
 }
 nav a{
 	text-decoration: none;
-	border-bottom: 1px solid #dddddd;
-	width: 80%;
-	margin-left: 10px;
-	float: left;
+	width: 88%;
+	margin: 10px;
+	color: #535353;
+	padding: 10px;
 }
-.nav img{
-	float: left;
-	margin: 12px 12px 0px 7px;
+nav ul {
+    list-style-type: none;
+    margin-left: 5px;
+    padding: 0px;
+    list-style-image: url('bullet.jpg');
+    list-style-position: inside;
 }
-nav .webcam{
-	float: right;
+nav li{
 	margin: 0px;
+	padding: 11px; 
+	border-bottom: 1px solid #dddddd;
 }
+
 .webcamera{
-	float: left;	
+	margin-bottom: -20px;
+	padding: 0;
+	float: left;
+	position: relative;
+	top: -25px;
+	width: 19%;
+	left: -30px;
+	z-index: 10;	
+}
+.webcameramin{
+	float: left;
+	position: relative;
+	width: 12%;
+	top: 40px;
+	left: -80px;
+	z-index: 9;	
 }
 .cheap{
 	margin-top: 40px;
@@ -130,7 +150,32 @@ nav .webcam{
 .cheap img{
 	width: 100%;
 }
-
+.cheap span{
+	color: #8b8b8b;
+}
+.Special{
+	font-family: 'MyriadPro Regular';
+	font-size: 18px;
+	margin-left: -110px;
+	padding-left: 30px;
+	color: #2d2d2d;
+	background-color: #efefef;
+	float: left;
+	width: 30%;
+	min-width: 270px;
+	height: 44px;
+	text-align: left;
+	line-height: 20px;
+}
+.Special span{
+	color: #9e0000;
+}
+.arrow{
+	float: left;
+	position: relative;
+	left: -27px;
+	top: -2px;
+}
 .black{
 	font-family: 'MyriadPro-It';
 	font-size: 14px;
@@ -144,31 +189,37 @@ nav .webcam{
 aside{
 	width: 24%;
 	float: left;
-	margin: 2px;
-}
-.aside{
-	display: block;
+	margin: 0px;
+	
 	text-align: left;
 	font-size: 11px;
 	font-family: Tahoma;
-	width: 100%;
+	
 }
-.aside:first-child {
+aside h3{
 	background-color: #cbcbcb;
-	width: 102%;
-	height: 18px;
+	width: 100%;
+	height: 25px;
+	margin-bottom: 3px;
 }
-.aside a{
-	display: block;
+aside a{
 	text-decoration: none;
-	border-bottom: 1px dotted #dedcdc;
-	width: 98%;
-	margin-top: 5px;
-	padding-bottom: 3px;
+	width: 24%;
 	color: black;
 }
-.aside a:hover{
+aside li:hover{
 	color: #8a0000;
+}
+aside ul{
+	display: block;
+    list-style-type: none;
+    list-style-image: url('../images/arrow.png');
+    list-style-position: inside;
+}
+aside li{
+	
+	border-bottom: 1px dotted #dedcdc;
+	padding: 6px;
 }
 main{
 	width: 75%;
@@ -230,7 +281,7 @@ footer{
 	width: 79%;
 	height: 100px;
 	position: absolute;
-	top: 850px;
+	top: 900px;
 	background: #d9d8d8; 
     background: linear-gradient(to top, #bebebe, #fff);
     text-align: left;
@@ -286,8 +337,11 @@ footer a{
 .aside img{
 	width: 100%;
 }
+nav li{
+	padding: 7px;
+}
 footer{
-	top: 770px;
+	top: 860px;
 }
 footer img{
 	display: inline-block;
@@ -295,22 +349,47 @@ footer img{
 	margin-left: 15px;
 }
 .cheap{
+	margin-top: 15px;
+	margin-left: -45px;
+	width: 35%;
 	font-size: 32px;
 	letter-spacing: 1px;
-}  } 
+}  
+.black{
+	margin-left: -60px;
+}
+.special{
+	font-size: 15px;
+	min-width: 200px;
+}
+} 
 
 @media screen and (max-width: 920px) {
 	.cell{
-    	width: 38%;
+    width: 38%;
 }
-.nav{
-	font-size: 12px;
-	}
-nav p{
+header h5{
+	width: 25%;
+	display: block;
+	margin: 15px 0px 5px 40%;
+}
+select{
+	width: 120%;
+	margin-left: 30%;
+}
+nav{
 	font-size: 14px;
+	}
+nav a{
+	margin: 0;
+	padding: 0;
+}
+nav li{
+	margin: 0;
+	padding: 5px;
 }
 .cheap{
-	margin-top: 20px;
+	margin-top: 10px;
 	font-size: 28px;
 	letter-spacing: 1px;
 	width: 40%;
@@ -325,6 +404,10 @@ nav p{
 .webcamera{
 	width: 20%;
 }
+.special{
+	font-size: 14px;
+	min-width: 180px;
+}
 nav a{
 	width: 60%;
 	margin-left: 3px;
@@ -337,6 +420,18 @@ nav a{
 nav .webcam{
 	float: right;
 	margin: 0px;
+}
+aside h3{
+	font-size: 11px;
+}
+aside li{
+	padding: 4px;
+}
+aside img{
+	width: 102%;
+}
+footer{
+	top: 750px;
 }
 footer img{
 	display: inline-block;
@@ -351,12 +446,46 @@ footer img{
 	margin-top: 7px;
 	height: 11%;
 }
+.special{
+	font-size: 11.5px;
+	width: 100px;
+}
+.goods {
+    float: left;
+    height: 70%;
+}
+.cell div:first-child{
+	height: 70%;
+}
+.cell h3{
+	font-size: 11px;
+}
+.cell p{
+	padding: 5px;
+	margin: -30px 0px 0px 0px;
+	float: right;
+}
+.cell a{
+	margin: 0px;
+}
+.big{
+	margin: 0;
+}
 	}
 
 	@media screen and (max-width: 838px) {
 .cheap img{
 	width: 90%;
 	margin-right: -25px;
+}
+footer img{
+	margin-left: 1%;
+}
+.store{
+	line-height: 22px;
+}
+.store p{
+	margin-top: 5px;
 }
 	}
 
@@ -365,4 +494,175 @@ footer img{
 	width: 90%;
 	margin-right: -25px;
 }
+}
+	@media screen and (max-width: 746px) {
+.special{
+	padding-left: 100px;
 	}
+.webcamera {
+    width: 24%;
+}
+.arrow{
+	width: 10%;
+}
+footer img {
+	width: 20%;
+	}
+footer img:first-child {
+	width: 40%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+aside{
+	width: 30%;
+	}
+main{
+	width: 68%;
+	}
+nav{
+	width: 100%;
+}
+nav ul{
+	display: flex;
+	flex-direction: row;
+	margin-left: 2px;
+	margin-right: 2px;
+	width: 99%;
+	list-style-image: none;
+	font-size: 14px;
+}
+nav li{
+	height: 30px;
+	padding-left: 10px;
+	align-items: stretch;
+	width: 20%;
+	border-left: 1px solid #dddddd;	
+}
+header{
+	font-size: 10px;
+}
+.webcamera, .webcameramin {
+    margin: 0px;
+    padding: 0;
+    float: left;
+    width: 25%;
+    position: relative;
+    top: -8px;
+    left: 15px;
+    z-index: 10;
+}
+.webcameramin {
+	width: 12%;
+	left: -14px;
+	z-index: 9;
+	}
+.cell{
+	width: 80%;
+	}
+.cell div:first-child{
+	height: 80%;
+	}
+.goods{
+	height: 95%;
+	}
+.cell h3{
+	font-size: 14px;
+	}
+.cell p{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: -35px;
+	left: 20px;
+}
+div.bottom{
+	display: flex;
+	flex-wrap: nowrap;
+	width: 95%;
+	height: 20px;
+	justify-content: space-around;
+	margin-top: -30px;
+	position: relative;
+	top: -30px;
+}
+select{
+	margin-left: 10%;
+	}
+header h5{
+	margin-left: 5px;
+}
+.cheap{
+	float: left;
+	width: 60%;
+	margin-left: -5px;
+	font-size: 20px;
+	}
+.special{
+	margin-left: -40px;
+	padding-left: 50px;
+}
+aside{
+	width: 35%;
+	font-size: 13px;
+}
+main{
+	width: 65%;
+}
+.bottom{
+	width: 100%;
+	height: 10px;
+}
+footer{
+	top: 1270px;
+}                    }
+
+@media screen and (max-width: 586px) {
+.store {
+    font-size: 20px;
+}
+.b_lang li img{
+    margin: -1px;
+    width: 25%;
+}
+select{
+	margin: 0;
+	width: 90%;
+}
+.webcamera{
+width: 27%;
+}
+footer {
+    top: 1260px;
+}
+footer a {
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+.goods {
+    height: 65%;
+}
+aside h3, aside {
+	font-size: 10px;
+}
+.black {
+    margin-left: 0px;
+    font-size: 12px;
+}
+.name{
+	font-size: 11px;
+}
+.cell h3, .cell p {
+    font-size: 11px;
+    line-height: 16px;
+}
+
+div.bottom {
+	top: -20px;
+	flex-wrap: wrap;
+	justify-content: left;
+}
+.b_cart {
+    width: 30%;
+}
+}
